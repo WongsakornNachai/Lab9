@@ -1,5 +1,6 @@
 const postsList = document.getElementById("posts-list");
 const userName = document.getElementById("user-name");
+const userId = new URLSearchParams(window.location.search).get("id"); // เพิ่มบรรทัดนี้
 
 async function fetchPosts() {
   try {
@@ -13,7 +14,7 @@ async function fetchPosts() {
       <div class="post">
         <h3>${post.title}</h3>
         <p>${post.body}</p>
-        <button onclick="toggleComments(${post.id}, this)">ดูความคิดเห็น</button>
+        <button class="toggle-comments-btn" onclick="toggleComments(${post.id}, this)">ดูความคิดเห็น</button>
         <div id="comments-${post.id}" class="comments" style="display: none;"></div>
       </div>
     `).join("");
