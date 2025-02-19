@@ -12,33 +12,67 @@ body {
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
+  .user{
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
   .user, .post {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
   }
+  .posts-list {
+    margin-top: 20px;
+  }
+  
+  .post {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .toggle-comments-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .toggle-comments-btn:hover {
+    background-color: #218838;
+  }
+  
   .user:hover, .post:hover {
     background-color: #f0f0f0;
   }
   .back-button {
     text-decoration: none;
-    color: #007bff;
+    color: #000000;
     font-size: 16px;
   }
   button {
-    background-color: #007bff;
-    color: white;
+    background-color: #00ff59;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
   }
   button:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
   }
   .comments {
     margin-top: 10px;
     padding: 10px;
     background-color: #f9f9f9;
-    border-left: 3px solid #007bff;
+    border-left: 3px solid #fff5f5;
   }
